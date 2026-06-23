@@ -1,0 +1,63 @@
+Task 2
+
+1. List 5 ML Applications
+
+YouTube video recommendations
+Netflix movie suggestions
+Face unlock on smartphones
+Spam email detection
+Google Maps traffic prediction
+
+2. Explain Spam Detection
+
+Spam detection uses Machine Learning to classify emails as spam or non-spam. The model learns from previously labelled emails and predicts whether a new email is unwanted.
+
+3. Explain Recommendation System
+
+Recommendation systems analyze user preferences and behaviour to suggest relevant products, movies, songs, or videos.
+
+Example:
+Netflix recommends movies.
+Amazon recommends products.
+YouTube suggests videos.
+
+
+Task 6
+
+1. Draw ML Workflow Diagram
+
+Collect Data
+     ↓
+Clean Data
+     ↓
+Train Model
+     ↓
+Test Model
+     ↓
+Prediction
+
+2. Explain Each Step
+
+Collect Data: Gather data from different sources.
+
+Clean Data: Remove errors, duplicates, and missing values.
+
+Train Model: Teach the model using training data.
+
+Test Model: Evaluate the model's performance.
+
+Prediction: Use the trained model to predict outcomes for new data.
+
+3. Give Real-World Example
+
+House Price Prediction
+
+Step 1: Collect house data such as area, number of rooms, and location.
+
+Step 2: Clean the data by removing errors and missing values.
+
+Step 3: Train the machine learning model.
+
+Step 4: Test the model using sample data.
+
+Step 5: Predict the price of a new house.

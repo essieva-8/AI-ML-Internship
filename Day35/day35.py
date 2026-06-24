@@ -93,7 +93,7 @@ print("Predicted Sales for Month 6:", sales_prediction)
 
 #3. Explain training logic
 
-# Model learns the relationship between X and y and. After learning the pattern, it predicts output for new input values.
+# Model learns the relationship between X and y. After learning the pattern, it predicts output for new input values.
 
 
 #Task 6

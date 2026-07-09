@@ -45,5 +45,3 @@ applications = [
 print("\n10 Real-World Applications of YOLO:")
 for app in applications:
     print(app)
-
-

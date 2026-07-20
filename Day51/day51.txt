@@ -1,0 +1,99 @@
+Task 1 - List 10 NLP Applications Used in Daily Life
+
+ChatGPT and AI chatbots
+Google Translate
+Gmail Spam Detection
+Siri (Apple)
+Google Assistant
+Amazon Alexa
+Predictive text/autocorrect on smartphones
+Amazon product review analysis
+YouTube comment moderation
+Customer support chatbots on websites
+
+
+Task 2 - Identify 5 Apps That Use NLP
+
+| App              | NLP Application                               |
+| ---------------- | --------------------------------------------- |
+| ChatGPT          | Question answering, conversation generation   |
+| Google Translate | Language translation                          |
+| Gmail            | Spam detection, Smart Compose                 |
+| WhatsApp         | Predictive text and autocorrect               |
+| Amazon           | Review sentiment analysis and recommendations |
+
+
+Task 3 - Collect 20 Positive and 20 Negative Reviews
+
+20 Positive Reviews
+
+Excellent product! Highly recommended.
+Amazing quality and fast delivery.
+I absolutely love this item.
+Worth every penny.
+Very easy to use and reliable.
+Fantastic customer service.
+The product exceeded my expectations.
+Great value for money.
+Works perfectly every time.
+Five stars! I'll buy again.
+Beautiful design and premium quality.
+Very satisfied with my purchase.
+The app is simple and user-friendly.
+Quick installation and smooth performance.
+Outstanding experience overall.
+Highly impressed with the features.
+Packaging was excellent.
+The support team was very helpful.
+I would definitely recommend this to friends.
+One of the best products I have used.
+
+20 Negative Reviews
+
+Very disappointed with the quality.
+Waste of money.
+The product stopped working after one day.
+Poor customer support.
+Delivery was delayed.
+Not worth the price.
+The app crashes frequently.
+Completely different from the description.
+Bad experience overall.
+I won't buy this again.
+Very difficult to use.
+The battery drains too quickly.
+The packaging was damaged.
+It did not meet my expectations.
+Low-quality materials were used.
+The performance is very slow.
+The instructions were confusing.
+It has too many bugs.
+I regret purchasing this product.
+One of the worst products I have bought.
+
+
+Task 4 - How ChatGPT Uses NLP
+
+ChatGPT uses Natural Language Processing (NLP) to understand and generate human language. It analyzes the user's input, identifies the context and meaning, and produces relevant, accurate, and natural responses. NLP enables ChatGPT to answer questions, translate languages, summarize text, generate content, and hold conversations similar to human communication.
+
+
+Task 5 - NLP Workflow Diagram
+
+          Text Data
+              │
+              ▼
+       Text Cleaning
+              │
+              ▼
+      Text Processing
+              │
+              ▼
+     Feature Extraction
+              │
+              ▼
+       Model Training
+              │
+              ▼
+         Prediction
+
+

@@ -60,9 +60,11 @@ model = YOLO("yolov8n.pt")
 
 # Train the model on the custom dataset
 model.train(
-    data="data.yaml",
+    data="D:\\AI&ML Intern\\AI-ML-Internship\\Day48\\HelmetDataset\\data.yaml",
     epochs=10
 )
+
+
 
 
 

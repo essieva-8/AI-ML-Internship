@@ -35,17 +35,17 @@ model = YOLO("yolov8n.pt")
 
 # Train the model
 model.train(
-    data="data.yaml",
+    data="D:\\AI&ML Intern\\AI-ML-Internship\\Day50\\HelmetDataset\\data.yaml",
     epochs=20
 )
 
 print("Training Completed Successfully!")
 
 # Load trained model
-model = YOLO("runs/detect/train/weights/best.pt")
+model = YOLO("D:\\AI&ML Intern\\AI-ML-Internship\\Day50\\runs\\detect\\train-5\\weights\\best.pt")
 
 # Test image
-results = model("test_image.jpg")
+results = model("D:\\AI&ML Intern\\AI-ML-Internship\\Day50\\HelmetDataset\\test_image.jpg")
 
 # Display result
 results[0].show()
@@ -53,7 +53,7 @@ results[0].show()
 print("Testing Completed Successfully!")
 import cv2 
 from ultralytics import YOLO 
-model = YOLO( "runs/detect/train/weights/best.pt" ) 
+model = YOLO( "D:\\AI&ML Intern\\AI-ML-Internship\\Day50\\runs\\detect\\train-5\\weights\\best.pt" ) 
 cap = cv2.VideoCapture(0) 
 while True: 
     success, frame = cap.read() 

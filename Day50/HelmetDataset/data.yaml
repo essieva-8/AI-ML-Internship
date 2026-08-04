@@ -1,0 +1,6 @@
+train: D:/AI&ML Intern/AI-ML-Internship/Day50/HelmetDataset/train/images
+val: D:/AI&ML Intern/AI-ML-Internship/Day50/HelmetDataset/val/images
+
+nc: 4
+
+names: ["with helmet", "without helmet", "rider", "number plate"]

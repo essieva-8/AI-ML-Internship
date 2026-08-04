@@ -26,6 +26,3 @@ print("""Why FastText is suitable: Handles misspelled words commonly found in sp
 """)
 
 
-import sys
-print(sys.executable)
-print(sys.version)

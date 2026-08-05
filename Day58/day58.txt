@@ -1,0 +1,79 @@
+#Task 1 – Draw the chatbot architecture diagram
+
+                ┌──────────┐
+                │   User   │
+                └────┬─────┘
+                     ↓
+             ┌──────────────┐
+             │ User Message │
+             └──────┬───────┘
+                    ↓
+             ┌──────────────┐
+             │ NLP Engine   │
+             └──────┬───────┘
+                    ↓
+          ┌────────────────────┐
+          │ Intent Recognition │
+          └─────────┬──────────┘
+                    ↓
+       ┌──────────────────────────┐
+       │ Decision & Response      │
+       │ Generator                │
+       └────────────┬─────────────┘
+                    ↓
+             ┌──────────────┐
+             │   Response   │
+             │   to User    │
+             └──────────────┘
+
+
+#Task 2 – List five websites/applications that use chatbots
+
+| Website/Application | Chatbot Use              |
+| ------------------- | ------------------------ |
+| ChatGPT             | Conversational AI        |
+| Google Assistant    | Virtual assistance       |
+| Siri                | Voice-based assistance   |
+| Alexa               | Voice-based assistance   |
+| Banking Chatbots    | Banking/customer support |
+
+
+#Task 3 – Write five customer questions and identify their intents
+
+| User Message                    | Intent         |
+| ------------------------------- | -------------- |
+| Where is my order?              | Track Order    |
+| I forgot my password.           | Password Reset |
+| I want to cancel my order.      | Cancel Order   |
+| I want to return this product.  | Return Product |
+| What are your business timings? | Business Hours |
+
+
+#Task 4 – Create a simple conversation flow for a banking chatbot
+
+User : "I want to check my balance"
+                  ↓
+Banking Chatbot : "Please enter your PIN"
+                  ↓
+User : Enters PIN
+                  ↓
+Banking Chatbot : "Your current balance is ₹25,000."
+                  ↓
+User : "Thank you"
+                  ↓
+Banking Chatbot : "You're welcome!"
+                  ↓
+                End
+
+
+#Task 5 – Compare Rule-Based and AI-Based chatbots
+
+| Feature       | Rule-Based Chatbot             | AI-Based Chatbot                           |
+| ------------- | ------------------------------ | ------------------------------------------ |
+| Technology    | Predefined rules               | Artificial Intelligence & Machine Learning |
+| Learning      | No learning                    | Learns from data                           |
+| Responses     | Limited                        | Flexible                                   |
+| Understanding | Follows exact/programmed rules | Understands different forms of questions   |
+| Complexity    | Easy to build                  | More complex                               |
+| Suitable for  | FAQs                           | Smart assistants                           |
+| Example       | Simple FAQ bot                 | AI conversational assistant                |

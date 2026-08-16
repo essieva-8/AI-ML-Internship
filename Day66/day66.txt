@@ -1,0 +1,142 @@
+#Task 1
+                ┌───────────────┐
+                │     User      │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │ User Question │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │   Embedding   │
+                │     Model     │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │ Vector        │
+                │ Database      │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │   Retrieve    │
+                │   Relevant    │
+                │   Documents   │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │     Large     │
+                │    Language   │
+                │     Model     │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │  Final AI     │
+                │   Response    │
+                └───────────────┘
+
+
+#Task 2
+
+A RAG knowledge base can store different types of information.
+Five examples are:
+PDF files
+Word documents
+Excel files
+Text files
+Company documents
+
+
+#Task 3
+
+1. FAISS
+
+FAISS stands for Facebook AI Similarity Search.
+It is a library used for efficient similarity search and clustering of dense vectors. In a RAG system, it can be used to store embeddings and retrieve vectors that are similar to a user's query.
+
+2. ChromaDB
+
+ChromaDB is a vector database designed for storing and searching embeddings.
+In RAG applications, it can be used to store document embeddings and retrieve relevant information based on semantic similarity.
+
+3. Pinecone
+
+Pinecone is a vector database/service designed for similarity search using vector embeddings.
+It can be used in RAG systems to store document embeddings and retrieve relevant information quickly.
+
+
+#Task 4
+
+| Question                     | Answer                                                                                  |
+| ---------------------------- | --------------------------------------------------------------------------------------- |
+| What courses are available?  | The college offers undergraduate and postgraduate programmes.                           |
+| How can I apply?             | Students can apply through the official admission process.                              |
+| What documents are required? | Academic certificates, identity proof and other required documents should be submitted. |
+| Is there an application fee? | Yes, applicants may need to pay the prescribed application fee.                         |
+| When does admission start?   | Admission starts according to the college's announced admission schedule.               |
+
+
+#Task 5
+
+A chatbot can answer questions from a PDF by treating the PDF as an external knowledge source.
+
+PDF Document
+     ↓
+Extract Text
+     ↓
+Split Text into Chunks
+     ↓
+Create Embeddings
+     ↓
+Store Embeddings
+in Vector Database
+     ↓
+User Asks Question
+     ↓
+Create Question Embedding
+     ↓
+Similarity Search
+     ↓
+Retrieve Relevant PDF Chunks
+     ↓
+Send Question + Retrieved Text
+to LLM
+     ↓
+Generate Answer
+     ↓
+Display Answer
+
+
+#Explanation
+
+Step 1 – Upload the PDF
+The PDF containing the required information is provided to the RAG system.
+
+Step 2 – Extract the text
+The text is extracted from the PDF.
+
+Step 3 – Split the text
+Large documents are divided into smaller sections or chunks.
+
+Step 4 – Generate embeddings
+Each chunk is converted into a numerical vector representing its meaning.
+
+Step 5 – Store embeddings
+The embeddings are stored in a vector database.
+
+Step 6 – User asks a question
+For example: "What is the admission fee?"
+
+Step 7 – Retrieve relevant information
+The question is converted into an embedding, and the vector database searches for similar document chunks.
+
+Step 8 – Generate the answer
+The retrieved information and the question are sent to an LLM, , which generates the answer.
+
+Step 9 – Return the response
+The generated answer is returned to the user.

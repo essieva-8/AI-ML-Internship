@@ -1,0 +1,111 @@
+#Task 1
+
+                 ┌──────────────┐
+                 │     User     │
+                 └──────┬───────┘
+                        │
+                        ▼
+                 ┌──────────────┐
+                 │ Ask Question │
+                 └──────┬───────┘
+                        │
+                        ▼
+              ┌───────────────────┐
+              │ Question Embedding│
+              └─────────┬─────────┘
+                        │
+                        ▼
+              ┌───────────────────┐
+              │  Vector Database  │
+              └─────────┬─────────┘
+                        │
+                        ▼
+              ┌───────────────────┐
+              │ Retrieve Documents│
+              └─────────┬─────────┘
+                        │
+                        ▼
+                 ┌──────────────┐
+                 │ OpenAI / LLM │
+                 └──────┬───────┘
+                        │
+                        ▼
+              ┌───────────────────┐
+              │ Generate Response │
+              └─────────┬─────────┘
+                        │
+                        ▼
+                 ┌──────────────┐
+                 │ User Receives│
+                 │    Answer    │
+                 └──────────────┘
+
+
+#Task 2
+
+PDF
+ |
+ v
+Extract Text
+ |
+ v
+Split into Chunks
+ |
+ v
+Generate Embeddings
+ |
+ v
+Store in ChromaDB
+ |
+ v
+Retrieve Relevant Chunks
+ |
+ v
+Send Context + Question to LLM
+ |
+ v
+Generate Final Answer
+
+
+#Task 3
+
+Python Libraries Required for RAG:
+-----------------------------------
+PyPDF2
+Sentence Transformers
+ChromaDB
+FAISS
+OpenAI SDK
+
+
+#Task 4
+
+| Component       | Purpose                         |
+| ----------------| ------------------------------- |
+| PDF Loader      | Reads PDF files                 |
+| Chunker         | Splits text into smaller chunks |
+| Embedding Model | Converts text into vectors      |
+| ChromaDB        | Stores vectors                  |
+| Retriever       | Finds similar/relevant chunks   |
+| LLM             | Generates the final answer      |
+
+
+#Task 5
+
+1. LangChain
+
+LangChain is a framework used for developing applications powered by Large Language Models.
+It provides components for document loading, text splitting, embeddings, retrieval, and LLM interaction.
+It can be used to connect documents with vector databases in a RAG application.
+LangChain helps developers build the different stages of a RAG pipeline.
+It can integrate with tools such as vector databases and embedding models.
+Therefore, LangChain is useful for developing complete LLM and RAG applications.
+
+2. LlamaIndex
+
+LlamaIndex is a framework designed for building applications that connect LLMs with external data.
+It provides tools for loading, indexing, and retrieving information from documents.
+It can be used to create retrieval systems for RAG applications.
+LlamaIndex helps organize external data so that LLMs can access relevant information.
+It supports document indexing and retrieval as important parts of the RAG workflow.
+Therefore, LlamaIndex is useful for building knowledge-based LLM applications.

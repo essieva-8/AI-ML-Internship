@@ -1,0 +1,61 @@
+Render – Short Report
+
+1. Introduction
+
+Render is a cloud platform that can be used to deploy web applications and backend services. For a RAG chatbot, a FastAPI backend can be deployed as a web service so that users can access the application remotely.
+
+2. Features
+
+Important features include:
+
+Web-service deployment.
+Git-based deployment.
+Automatic deployments.
+Environment variables.
+HTTPS support.
+Logs and monitoring.
+Support for backend applications.
+Custom domains on appropriate plans.
+
+3. Advantages
+
+Simple deployment:
+Render provides a relatively straightforward way to deploy web applications.
+
+Git integration:
+Applications can be connected to source-code repositories, allowing deployments when code changes.
+
+HTTPS:
+Secure communication can be provided for deployed applications.
+
+Suitable for small projects:
+It can be useful for student projects, prototypes, APIs, and small applications.
+
+Easy management:
+The deployment environment can be managed through a web dashboard.
+
+4. Limitations
+Cloud hosting can introduce costs.
+Free or low-cost resources may have limitations.
+Large-scale RAG applications may require more powerful infrastructure.
+LLM API costs are separate from application hosting costs.
+Performance depends on the selected resources and architecture.
+Production systems require proper security and monitoring.
+
+These limitations are consistent with the Day 80 notes, which highlight cloud-hosting costs, API costs, monitoring requirements, security, and infrastructure management as deployment considerations.
+
+5. Pricing Model
+
+Render generally follows a service/resource-based pricing model, where the cost depends on the type and resources of the services being used.
+
+For an AI/RAG application, the overall cost can include:
+
+Cloud hosting
++
+Database/storage
++
+LLM/API usage
++
+Other infrastructure
+
+Therefore, deploying a RAG chatbot requires considering both hosting costs and AI-model/API costs.

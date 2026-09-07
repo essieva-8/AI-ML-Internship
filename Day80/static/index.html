@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 80 RAG Chatbot - Task 4</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #answer, #sources, #status {
+            margin-top: 15px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Day 80 RAG Chatbot</h1>
+
+<h2>Upload PDF</h2>
+
+<input type="file" id="pdfFile" accept=".pdf">
+<br>
+<button onclick="uploadPDF()">Upload PDF</button>
+
+<div id="uploadResult"></div>
+
+
+<h2>Ask a Question</h2>
+
+<input
+    type="text"
+    id="question"
+    placeholder="Enter your question"
+    style="width: 80%;"
+>
+
+<br>
+
+<button onclick="askQuestion()">Ask</button>
+
+
+<h2>Chatbot Response</h2>
+
+<div id="answer">
+    No question asked yet.
+</div>
+
+<div id="sources">
+    <strong>Sources:</strong> None
+</div>
+
+<div id="status">
+    <strong>Status:</strong> -
+</div>
+
+
+<script>
+
+async function uploadPDF() {
+
+    const fileInput = document.getElementById("pdfFile");
+
+    if (!fileInput.files.length) {
+        alert("Please select a PDF.");
+        return;
+    }
+
+    const formData = new FormData();
+
+    formData.append(
+        "file",
+        fileInput.files[0]
+    );
+
+    try {
+
+        const response = await fetch(
+            "/upload",
+            {
+                method: "POST",
+                body: formData
+            }
+        );
+
+        const data = await response.json();
+
+        document.getElementById(
+            "uploadResult"
+        ).innerHTML =
+            `<p>
+                ${data.message}
+                <br>
+                Pages: ${data.pages !== undefined ? data.pages : "N/A"}
+                <br>
+                Chunks: ${data.chunks !== undefined ? data.chunks : "N/A"}
+                <br>
+                Response Time: ${data.response_time !== undefined ? data.response_time : "N/A"} seconds
+            </p>`;
+
+    } catch (error) {
+
+        document.getElementById(
+            "uploadResult"
+        ).innerHTML =
+            `<p>Upload failed: ${error}</p>`;
+    }
+}
+
+
+async function askQuestion() {
+
+    const question =
+        document.getElementById(
+            "question"
+        ).value;
+
+    if (!question.trim()) {
+
+        alert("Please enter a question.");
+
+        return;
+    }
+
+    document.getElementById(
+        "answer"
+    ).innerText =
+        "Thinking...";
+
+    try {
+
+        const response = await fetch(
+            "/ask?question=" +
+            encodeURIComponent(question),
+            {
+                method: "POST"
+            }
+        );
+
+        const data = await response.json();
+
+        document.getElementById(
+            "answer"
+        ).innerText =
+            data.answer || "No answer available.";
+
+        document.getElementById(
+            "sources"
+        ).innerHTML =
+            "<strong>Sources:</strong><br>" +
+            (
+                data.sources && data.sources.length
+                ? data.sources.join("<br>")
+                : "No sources"
+            );
+
+        document.getElementById(
+            "status"
+        ).innerHTML =
+            "<strong>Status:</strong> " +
+            (data.status !== undefined ? data.status : "N/A") +
+            "<br>" +
+            "<strong>Response Time:</strong> " +
+            (data.response_time !== undefined ? data.response_time : "N/A") +
+            " seconds";
+
+    } catch (error) {
+
+        document.getElementById(
+            "answer"
+        ).innerText =
+            "Error: " + error;
+
+        document.getElementById(
+            "status"
+        ).innerText =
+            "Status: Failure";
+    }
+}
+
+</script>
+
+</body>
+</html>
